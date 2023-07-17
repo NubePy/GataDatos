@@ -2,6 +2,7 @@
 </p>
 <p align="center">
 🌸 INSTALACIÓN AUTOMÁTICA - TERMUX 🌸
+  
 ```bash
 termux-setup-storage
 ```
