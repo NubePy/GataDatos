@@ -111,7 +111,7 @@ if (!isNumber(chat.expired)) chat.expired = 0
 } else
 global.db.data.chats[m.chat] = {
 isBanned: false,
-welcome: true,
+welcome: false,
 detect: true,
 sWelcome: '',
 sBye: '',
@@ -119,7 +119,7 @@ sPromote: '',
 sDemote: '', 
 delete: true,
 antiver: true,
-modoadmin: false,
+modoadmin: true,
 antiLink: false,
 antiLink2: false,	
 antiTiktok: false,
@@ -132,6 +132,7 @@ antifake: false,
 antiTraba: true,
 antitoxic: true,
 reaction: true,
+autoread: false,
 expired: 0,
 }
             
@@ -143,17 +144,17 @@ if (!('self' in settings)) settings.self = false
 if (!('autoread' in settings)) settings.autoread = false
 if (!('restrict' in settings)) settings.restrict = false
 if (!('antiCall' in settings)) settings.antiCall = true
-if (!('antiPrivate' in settings)) settings.antiPrivate = false
+if (!('antiPrivate' in settings)) settings.antiPrivate = true
 if (!('autoread2' in settings)) settings.autoread2 = false
 if (!('jadibotmd' in settings)) settings.jadibotmd = false  
 
 } else global.db.data.settings[this.user.jid] = {
 self: false,
-autoread: false,
-autoread2: false,
+autoread: true,
+autoread2: true,
 restrict: false,
 antiCall: true,
-antiPrivate: false,
+antiPrivate: true,
 jadibotmd: false,
 }
 	
@@ -440,7 +441,7 @@ if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])
 	    
 if (!db.data.chats[m.chat].reaction && m.isGroup) return
 if (!m.fromMem && m.text.match(/(gata|lite|bot)/gi)) {
-let emot = pickRandom(["😺", "😸", "😹", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
+let emot = pickRandom(["🤔", "🤘🏻", "🤙🏻", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
 this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
 }}
