@@ -2,11 +2,10 @@
 </p>
 <p align="center">
 <a href="https://github.com/GataNina-Li/GataBot-MD"><img title="GataBot-MD" src="https://img.shields.io/badge/🌸  EN:
-> - [x] TERMUx
+ Termux
 
 
-[`♻️ App Termux`](https://f-droid.org/es/packages/com.termux/)
-### 🌸 INSTALACIÓN AUTOMÁTICA - TERMUX 🌸
+🌸 INSTALACIÓN AUTOMÁTICA - TERMUX 🌸
 <a href="https://youtu.be/tzM0f_N8BII">
 <img src="https://img.shields.io/badge/Tutorial-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Tutorial"> </a>
 
