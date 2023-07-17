@@ -2,9 +2,6 @@
 </p>
 <p align="center">
 🌸 INSTALACIÓN AUTOMÁTICA - TERMUX 🌸
-<a href="https://youtu.be/tzM0f_N8BII">
-<img src="https://img.shields.io/badge/Tutorial-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Tutorial"> </a>
-
 ```bash
 termux-setup-storage
 ```
