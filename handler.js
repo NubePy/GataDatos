@@ -440,7 +440,7 @@ if (settingsREAD.autoread2) await this.readMessages([m.key])
 if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])    
 	    
 if (!db.data.chats[m.chat].reaction && m.isGroup) return
-if (!m.fromMem && m.text.match(/(gata|lite|bot)/gi)) {
+if (!m.fromMem && m.text.match(/(Emet|.|Bot)/gi)) {
 let emot = pickRandom(["🤔", "🤘🏻", "🤙🏻", "😎", "🥁", "🎸", "😯", "🥶", "🤠", "🧐", "💀", "🤥", "👨‍🚀", "🤯", "😱", "😨", "👳‍♂️", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝🏼", "💪🏻", "🖖🏻", "✍🏻", "🧠", "🐯", "🦁", "🌳", "⚡️", "🌴", "☃️", "⛄️", "🕸", "🌛", "🌜", "🍓", "🍎", "🎈", "🍂", "☕", "🎉", "🎎", "🤺", "🧗‍♂️", "🧟‍♂️", "🖤", "🤍", "👨‍🦲", "🧞‍♂️", "🧔", "🌝", "😎", "🔥", "👨‍🚒", "🐦"])
 this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
@@ -474,7 +474,7 @@ pp = await this.profilePictureUrl(user, 'image')
 let apii = await this.getFile(pp)                                      
 const botTt2 = groupMetadata.participants.find(u => this.decodeJid(u.id) == this.user.jid) || {} 
 const isBotAdminNn = botTt2?.admin === "admin" || false
-text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '😻 𝗦𝘂𝗽𝗲𝗿 𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿 😻') :
+text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || ' 𝗦𝘂𝗽𝗲𝗿 EmetBot') :
 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
 			    
 if (chat.antifake && botTt.restrict && isBotAdminNn && action === 'add') {
