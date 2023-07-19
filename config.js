@@ -13,7 +13,7 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 // EN ➜ Add the Bot number as priority first
 // EN ➜ If you want to receive reports you must use the three parameters (Number, name and true)
 global.owner = [
-['593993684821', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿 🌻🐈', true], 
+['593993684821', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚 🤘🏻', true], 
 ['5492266466080', '𝙊𝙬𝙣𝙚𝙧 (1) 💻', true],  
 ['972529277026', '𝙊𝙬𝙣𝙚𝙧 (2) 💻', true],  
 ['59894808483', '𝘾𝙪𝙨𝙩𝙤𝙢𝙚𝙧 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 🥏', true],
@@ -24,8 +24,8 @@ global.prems = []
    
 // ES ➜ Agregue el código de idioma el cual usará GataBot  
 // EN ➜ Add the language code which GataBot will use
-//  es = Español      id = Bahasa Indonesia       ar = عرب
-//  en = English      pt = Português 
+//  es = Español             
+//  en = English      
 global.lenguajeGB = es  //<-- Predeterminado en idioma Español 
 
 // ES ➜ Consigue Apikey en https://platform.openai.com/account/api-keys
@@ -40,7 +40,7 @@ global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c7
 global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())]
 global.keysneoxrrr = ['5VC9rvNx', 'cfALv5']
 global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
-global.lolkeysapi = 'GataDios'
+global.lolkeysapi = 'GataDio'
 global.itsrose = ['4b146102c4d500809da9d1ff']
 
 global.APIs = { 
@@ -79,8 +79,8 @@ global.fetch = fetch
 global.axios = axios
 global.moment = moment	
 
-global.packname = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿 🌻🐈'
-global.author = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
+global.packname = 'EmetBot'
+global.author = 'Emet 𝘿𝙞𝙤𝙨'
 
 // ES ➜ Está parte es para mostrar el contacto de alguien al usar #contacto
 // EN ➜ This part is to display someone's contact using #contact
@@ -98,7 +98,7 @@ global.country = '' //agrega tú país ejemplo: 🇪🇨
 global.vs = '1.0.2'
 global.vsJB = '4.0'
 
-global.gt = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩𝙇𝙞𝙩𝙚-𝙈𝘿'
+global.gt = 'EmetBot'
 global.yt = 'https://youtube.com/@gatadios'
 global.yt2 = 'https://www.youtube.com/watch?v=Ko019wvu2Tc&t=71s'
 global.ig = 'https://www.instagram.com/gata_dios'
