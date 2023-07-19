@@ -1,7 +1,7 @@
 <p align="center"> 
 </p>
 <p align="center">
-🌸 INSTALACIÓN AUTOMÁTICA - TERMUX 🌸
+ INSTALACIÓN AUTOMÁTICA - TERMUX
   
 ```bash
 termux-setup-storage
@@ -13,7 +13,8 @@ apt update -y && yes | apt upgrade && pkg install -y bash wget && wget -O - http
 - [`Repositorio`](https://github.com/GataNina-Li/GataBotLite-MD/blob/14da583cddcf76285988dadb76cfc77f9373d8a8/gatalite.sh#L155)
 - [`Nombre del Bot`](https://github.com/GataNina-Li/GataBotLite-MD/blob/14da583cddcf76285988dadb76cfc77f9373d8a8/gatalite.sh#L159)
 - Actualizar: `https://raw.githubusercontent.com/GataNina-Li/GataBotLite-MD/master/gatalite.sh`
-### 🌼 INSTALACIÓN MANUAL - TERMUX 🌼
+  
+###  INSTALACIÓN MANUAL - TERMUX 
 ```bash
 termux-setup-storage
 apt update
