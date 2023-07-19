@@ -85,7 +85,7 @@ global.db.data.chats[m.chat] = {}
                 
 if (chat) {
 if (!('isBanned' in chat)) chat.isBanned = false                    
-if (!('welcome' in chat)) chat.welcome = true                    
+if (!('welcome' in chat)) chat.welcome = false                    
 if (!('detect' in chat)) chat.detect = true                    
 if (!('sWelcome' in chat)) chat.sWelcome = ''                    
 if (!('sBye' in chat)) chat.sBye = ''                    
@@ -93,7 +93,7 @@ if (!('sPromote' in chat)) chat.sPromote = ''
 if (!('sDemote' in chat)) chat.sDemote = '' 
 if (!('delete' in chat)) chat.delete = true                        
 if (!('antiver' in chat)) chat.viewonce = true         
-if (!('modoadmin' in chat)) chat.modoadmin = false           
+if (!('modoadmin' in chat)) chat.modoadmin = true           
 if (!('antiLink' in chat)) chat.antiLink = false
 if (!('antiLink2' in chat)) chat.antiLink2 = false    
 if (!('antiTiktok' in chat)) chat.antiTiktok = false
@@ -339,7 +339,7 @@ if (xp > 2000)
 m.reply('Exp limit') // LÍMITE DE EXP
 else               
 if (!isPrems && plugin.money && global.db.data.users[m.sender].money < plugin.money * 1) {
-this.reply(m.chat, `🐈 *NO TIENE GATACOINS*`, m)
+this.reply(m.chat, ` *NO TIENE EmetCOINS*`, m)
 continue // LÍMITE DE EXP    
 }
 m.exp += xp
@@ -383,7 +383,7 @@ if (m.limit)
 m.reply(+m.limit + lenguajeGB.smsCont8())
 }
 if (m.money)
-m.reply(+m.money + ' *GATACOINS USADO(S)* 🐱')
+m.reply(+m.money + ' *EmetCOINS USADO(S)* ')
 break
 }}} catch (e) {
 console.error(e)
@@ -441,7 +441,7 @@ if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])
 	    
 if (!db.data.chats[m.chat].reaction && m.isGroup) return
 if (!m.fromMem && m.text.match(/(gata|lite|bot)/gi)) {
-let emot = pickRandom(["🤔", "🤘🏻", "🤙🏻", "😻", "😼", "😽", "🙀", "😿", "😾", "🤩", "😏", "😳", "🥵", "🤯", "😱", "😨", "🤫", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝", "💪", "👑", "😚", "🐱", "🐈", "🐆", "🐅", "⚡️", "🌈", "☃️", "⛄️", "🌝", "🌛", "🌜", "🍓", "🍎", "🎈", "🪄", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "💘", "💝", "💟", "🌝", "😎", "🔥", "🖕", "🐦"])
+let emot = pickRandom(["🤔", "🤘🏻", "🤙🏻", "😎", "🥁", "🎸", "😯", "🥶", "🤠", "🧐", "💀", "🤥", "👨‍🚀", "🤯", "😱", "😨", "👳‍♂️", "🥴", "🤧", "🤑", "🤠", "🤖", "🤝🏼", "💪🏻", "🖖🏻", "✍🏻", "🧠", "🐯", "🦁", "🌳", "⚡️", "🌴", "☃️", "⛄️", "🕸", "🌛", "🌜", "🍓", "🍎", "🎈", "🍂", "☕", "🎉", "🎎", "🤺", "🧗‍♂️", "🧟‍♂️", "🖤", "🤍", "👨‍🦲", "🧞‍♂️", "🧔", "🌝", "😎", "🔥", "👨‍🚒", "🐦"])
 this.sendMessage(m.chat, { react: { text: emot, key: m.key }})}
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
 }}
