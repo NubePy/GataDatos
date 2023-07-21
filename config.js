@@ -6,7 +6,7 @@ import cheerio from 'cheerio'
 import fetch from 'node-fetch'
 import axios from 'axios'
 import moment from 'moment-timezone' 
-import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js' 
+import { en, es } from './lib/idiomas/total-idiomas.js' 
 
 // ES ➜ Agregué primero el número del Bot como prioridad  
 // ES ➜ Si desea recibir reportes debe de usar los tres parámetros (Número, nombre y true)
