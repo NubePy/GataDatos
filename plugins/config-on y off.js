@@ -47,7 +47,7 @@ case 'antiver': case 'modover': case 'modoobservar': case 'modobservar': case 'a
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
-throw false
+throw true
 }}
 chat.antiver = isEnable 
 break
@@ -134,7 +134,7 @@ chat.antifake = isEnable
 break
 
 case 'public': case 'publico':
-isAll = true
+isAll = false
 if (!isROwner) {
 global.dfail('rowner', m, conn)
 throw false
@@ -152,7 +152,7 @@ bot.jadibotmd = !isEnable
 break 
 		
 case 'autoread': case 'autovisto':
-isAll = true
+isAll = false
 if (!isROwner) {
 global.dfail('rowner', m, conn)
 throw false
@@ -174,7 +174,7 @@ case 'modoadmin': case 'modeadmin':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
-throw false
+throw true
 }}
 chat.modoadmin = isEnable          
 break    
@@ -193,7 +193,7 @@ case 'privado':
 isAll = true
 if (!isROwner) {
 global.dfail('rowner', m, conn)
-throw false
+throw true
 }
 bot.antiPrivate = isEnable
 break
