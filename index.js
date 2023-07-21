@@ -15,7 +15,7 @@ const rl = createInterface(process.stdin, process.stdout)
 
 try {
 const startColor = chalk.rgb(Math.floor(Math.random() * 256), Math.floor(Math.random() * 256), Math.floor(Math.random() * 256));
-console.log(startColor('❤️ Iniciando...'));
+console.log(startColor(' Iniciando...'));
 
 function getRandomColor() {
 const colors = ['system', 'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white', 'gray', 'redBright', 'greenBright', 'yellowBright', 'blueBright', 'magentaBright', 'cyanBright', 'whiteBright', 'candy'];
@@ -45,16 +45,16 @@ const options = {
  space: true,
  maxLength: '0',
 }
-cfonts.say('gatabot\nlite\nmd'.trim(), options)
+cfonts.say('emetbot\n.\n.'.trim(), options)
 
 } catch (err) {
-say('GataBot\nLite\nMD', {
+say('EmetBot\n.\n.', {
  font: 'chrome',
  align: 'center',
  gradient: ['red', 'magenta']
 })}
 
-say(`Desarrollado por @gata_dios`.trim(), {
+say(`beta`.trim(), {
  font: 'console',
  align: 'center',
  colors: ['candy']
