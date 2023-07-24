@@ -131,7 +131,7 @@ antiTwitter: false,
 antifake: false,
 antiTraba: true,
 antitoxic: true,
-reaction: true,
+reaction: false,
 autoread: false,
 expired: 0,
 }
