@@ -11,8 +11,8 @@ echo -e "\e[35m
 
 █\n\e[0m" 
 
-echo -e "\033[01;93mPreparando instalación...\nPreparing installation...\n\033[0m"
-echo -e "\033[01;32m\033[01mInstalando dependencias!!\nInstalling dependencies!!\n\033[0m" 
+echo -e "\033[01;93mPreparando instalación...\n\033[0m"
+echo -e "\033[01;32m\033[01mInstalando dependencias..\n\033[0m" 
 echo -e "\e[36m
 █ █▄░█ █▀ ▀█▀ ▄▀█ █░░ █░░   █▀▀ █ ▀█▀
 █ █░▀█ ▄█ ░█░ █▀█ █▄▄ █▄▄   █▄█ █ ░█░\n\e[0m"
@@ -27,7 +27,7 @@ echo -e "\033[0;34mNo se pudo instalar Git. Verifique su conexión a Internet e 
 echo -e "\033[01;33m$COMANDOS\033[0m"
 exit 1
 else
-echo -e "\033[01;32m\033[01mGit se ha instalado correctamente.\nGit has been installed successfully.\n\033[0m" 
+echo -e "\033[01;32m\033[01mGit se ha instalado correctamente\n\033[0m" 
 fi
 fi
  
@@ -45,7 +45,7 @@ echo -e "\033[0;34mNo se pudo instalar Node.js. Verifique su conexión a Interne
 echo -e "\033[01;33m$COMANDOS\033[0m"
 exit 1
 else
-echo -e "\033[01;32m\033[01mNode.js se ha instalado correctamente.\nNode.js has been installed successfully.\n\033[0m" 
+echo -e "\033[01;32m\033[01mNode.js se ha instalado correctamente.\n\033[0m" 
 fi
 fi
 
@@ -63,7 +63,7 @@ echo -e "\033[0;34mNo se pudo instalar FFmpeg. Verifique su conexión a Internet
 echo -e "\033[01;33m$COMANDOS\033[0m"
 exit 1
 else
-echo -e "\033[01;32m\033[01mFFmpeg se ha instalado correctamente.\nFFmpeg has been installed successfully.\n\033[0m" 
+echo -e "\033[01;32m\033[01mFFmpeg se ha instalado correctamente.\n\033[0m" 
 fi
 fi
 
@@ -81,7 +81,7 @@ echo -e "\033[0;34mNo se pudo instalar ImageMagick. Verifique su conexión a Int
 echo -e "\033[01;33m$COMANDOS\033[0m"
 exit 1
 else
-echo -e "\033[01;32m\033[01mImageMagick se ha instalado correctamente.\nImageMagick has been installed successfully.\n\033[0m" 
+echo -e "\033[01;32m\033[01mImageMagick se ha instalado correctamente.\n\033[0m" 
 fi
 fi
 
@@ -99,7 +99,7 @@ echo -e "\033[0;34mNo se pudo instalar Yarn. Verifique su conexión a Internet e
 echo -e "\033[01;33m$COMANDOS\033[0m"
 exit 1
 else
-echo -e "\033[01;32m\033[01mYarn se ha instalado correctamente.\nYarn has been installed successfully.\n\033[0m" 
+echo -e "\033[01;32m\033[01mYarn se ha instalado correctamente.\n\033[0m" 
 fi
 fi
 
@@ -114,8 +114,8 @@ echo -e "\e[36m
 echo -e "\033[01;32m\033[01m\nTodas las dependencias se han instalado correctamente.\nAll dependencies have been installed successfully.\n\033[0m" 
 
 echo -e "\e[35m
-──────▄▀▄─────▄▀▄
-─────▄█░░▀▀▀▀▀░░█▄
+
+─────...▄▄▄▄▄▄▄▄▄
 ─▄▄──█░░░░░░░░░░░█──▄▄
 █▄▄█─█░░▀░░┬░░▀░░█─█▄▄█
 
@@ -127,9 +127,9 @@ echo -e "\e[35m
 
 
 ██████╗░░..███████████╗...░█████╗...░██████╗.    ░  ..█████╗     ██████████╗   ███████╗
-██╔══╝...░██╔══██╗╚══██╔══╝██╔══   ╗ ..██╔══       v██╔══██╗╚═ ═██╔══╝  ██║░░░░░██║╚══╔══╝╔════╝
-██║██. ..╗██...██.║░░██.║░░██.██║   ...██╦╝         ██║██║░    ░██║░░░  ██║░░░.░██║░░░╗░░
-██║░░╚....██  ╗██╔    ██║  ██║░  ...  .═██           ██║░░██║░ ░░██║░░░  ██║░░░.░██║░░░░░
+██╔══╝...░██╔══██╗╚═██╔══╝██╔══   ╗ ..██╔══       v██╔══██╗╚═ ═██╔══╝  ██║░░░░░██║╚══╔══╝╔════╝
+██║██. ..╗██...██.║░██.║░░██.██║   ...██╦╝         ██║██║░    ░██║░░░  ██║░░░.░██║░░░╗░░
+██║░░╚....██  ╗██╔   ██║  ██║░  ...  .═██           ██║░░██║░ ░░██║░░░  ██║░░░.░██║░░░░░
 ██████╔╝.██║ ░░██║   ░██║..█████║   .  ██╦╝          █████╔╝░░.░█████████║░.  ░░██║░░░
 ░╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░  ╚══════╝╚═╝░░░╚═╝░░░╚══════╝\n\e[0m"
 
