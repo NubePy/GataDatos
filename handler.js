@@ -105,7 +105,7 @@ if (!('antiTwitter' in chat)) chat.antiInstagram = false
 if (!('antifake' in chat)) chat.antifake = false 
 if (!('antiTraba' in chat)) chat.antiTraba = true
 if (!('antitoxic' in chat)) chat.antitoxic = true 
-if (!('reaction' in chat)) chat.reaction = true
+if (!('reaction' in chat)) chat.reaction = false
 if (!isNumber(chat.expired)) chat.expired = 0
 
 } else
