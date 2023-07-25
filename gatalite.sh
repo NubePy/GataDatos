@@ -9,7 +9,7 @@ echo -e "\e[35m
 ░█▄▄█ ─▄─░█ ░█─░█ ─▀▀▀▄▄ ─░█── ░█▀▀▀ 　 ░█─── ░█▄▄█ 　 ░█▄▄█ ░█▄▄█ ░█░█░█ ─░█── ░█▄▄█ ░█─── ░█─── ░█▄▄█ 
 ░█─░█ ░█▄▄█ ─▀▄▄▀ ░█▄▄▄█ ─░█── ░█▄▄▄ 　 ░█▄▄█ ░█─░█ 　 ░█─── ░█─░█ ░█──▀█ ─░█── ░█─░█ ░█▄▄█ ░█▄▄█ ░█─░█
 
-█\n\e[0m" 
+.\n\e[0m" 
 
 echo -e "\033[01;93mPreparando instalación...\n\033[0m"
 echo -e "\033[01;32m\033[01mInstalando dependencias..\n\033[0m" 
@@ -110,12 +110,12 @@ echo -e "\e[36m
 ░▒█░░ ▒█░░▒█ ▒█░▒█ ▒█░░▒█ 　 ▒█░░░ ▒█░░▒█ ▒█▄▄▀ ▒█▄▄▀ ▒█▀▀▀ ▒█░░░ ░▒█░░ ▒█░░▒█ 
 ░▒█░░ ▒█▄▄▄█ ▒█▄▄▀ ▒█▄▄▄█ 　 ▒█▄▄█ ▒█▄▄▄█ ▒█░▒█ ▒█░▒█ ▒█▄▄▄ ▒█▄▄█ ░▒█░░ ▒█▄▄▄█
 
-█░░\n\e[0m"
-echo -e "\033[01;32m\033[01m\nTodas las dependencias se han instalado correctamente.\nAll dependencies have been installed successfully.\n\033[0m" 
+.\n\e[0m"
+echo -e "\033[01;32m\033[01m\nTodas las dependencias se han instalado correctamente.\n\033[0m" 
 
 echo -e "\e[35m
 
-─────...▄▄▄▄▄▄▄▄▄
+─────..▄▄▄▄▄▄▄▄▄
 ─▄▄──█░░░░░░░░░░░█──▄▄
 █▄▄█─█░░▀░░┬░░▀░░█─█▄▄█
 
@@ -126,11 +126,11 @@ echo -e "\e[35m
 ██║██║░╚███║██████╔╝░░░██║░░░██║░░██║███████╗███████╗
 
 
-██████╗░░..███████████╗...░█████╗...░██████╗.    ░  ..█████╗     ██████████╗   ███████╗
+██████╗░░..██████████╗...░█████╗...░██████╗.    ░  ..█████╗     ██████████╗   ███████╗
 ██╔══╝...░██╔══██╗╚═██╔══╝██╔══   ╗ ..██╔══       v██╔══██╗╚═ ═██╔══╝  ██║░░░░░██║╚══╔══╝╔════╝
 ██║██. ..╗██...██.║░██.║░░██.██║   ...██╦╝         ██║██║░    ░██║░░░  ██║░░░.░██║░░░╗░░
-██║░░╚....██  ╗██╔   ██║  ██║░  ...  .═██           ██║░░██║░ ░░██║░░░  ██║░░░.░██║░░░░░
-██████╔╝.██║ ░░██║   ░██║..█████║   .  ██╦╝          █████╔╝░░.░█████████║░.  ░░██║░░░
+██║░░╚....██  ╗██╔  ██║  ██║░  ...  .═██           ██║░░██║░ ░░██║░░░  ██║░░░.░██║░░░░░
+██████╔╝.██║ ░░██║   ██║..█████║   .  ██╦╝          █████╔╝░░.░█████████║░.  ░░██║░░░
 ░╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░  ╚══════╝╚═╝░░░╚═╝░░░╚══════╝\n\e[0m"
 
 
@@ -154,7 +154,7 @@ echo -e "\e[36m
 █░█ █▀█ █▀▄ ▄▀█ ▀█▀ █▀▀   █▄█ ▄▀█ █▀█ █▄░█
 █▄█ █▀▀ █▄▀ █▀█ ░█░ ██▄   ░█░ █▀█ █▀▄ █░▀█\n\e[0m"
 
-echo -e "\033[0;34mSe actualizará yarn automáticamente. Esto puede tomar tiempo, Espere por favor.\nIt will update yarn automatically. This may take time, please wait..\n\033[0m"
+echo -e "\033[0;34mSe actualizará yarn automáticamente. Esto puede tomar tiempo, Espere por favor.\n\033[0m"
 if yarn install 2>&1 >/dev/null | grep -E -i -q '(command not found|unable to locate package|E: Could not get lock|debconf: delaying package configuration|Package not found|Failed to fetch|404 Not Found|Hash sum mismatch|503 Service Unavailable|504 Gateway Timeout|408 Request Timeout|Connection timed out|Temporary failure resolving)'; then
 error=$(yarn install 2>&1 >/dev/null)
 echo -e "\033[0;31mError: $error\033[0m" 
@@ -167,7 +167,7 @@ echo -e "\e[35m
 █ █▄░█ █▀ ▀█▀ ▄▀█ █░░ █░░   █▄░█ █▀█ █▀▄▀█
 █ █░▀█ ▄█ ░█░ █▀█ █▄▄ █▄▄   █░▀█ █▀▀ █░▀░█\n\e[0m"
 
-echo -e "\033[0;34mSe instalará NPM automáticamente. Espere un momento por favor.\nNPM will be installed automatically. Wait a moment please.\n\033[0m"
+echo -e "\033[0;34mSe instalará NPM automáticamente. Espere un momento por favor.\n\033[0m"
 if npm install 2>&1 >/dev/null | grep -E -i -q '(command not found|unable to locate package|E: Could not get lock|debconf: delaying package configuration|Package not found|Failed to fetch|404 Not Found|Hash sum mismatch|503 Service Unavailable|504 Gateway Timeout|408 Request Timeout|Connection timed out|Temporary failure resolving)'; then
 error=$(npm install 2>&1 >/dev/null)
 echo -e "\033[0;31mError: $error\033[0m" 
