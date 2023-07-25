@@ -202,7 +202,7 @@ case 'reaction': case 'reaccion': case 'emojis': case 'antiemojis': case 'reacci
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
-throw true
+throw false
 }}
 chat.reaction = isEnable          
 break
