@@ -47,7 +47,7 @@ case 'antiver': case 'modover': case 'modoobservar': case 'modobservar': case 'a
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
-throw false
+throw true
 }}
 chat.antiver = isEnable 
 break
@@ -152,13 +152,13 @@ bot.jadibotmd = !isEnable
 break 
 		
 case 'autoread': case 'autovisto':
-isAll = true
+isAll = false
 if (!isROwner) {
 global.dfail('rowner', m, conn)
-throw true
+throw false
 }
-bot.autoread2 = isEnable    
-global.opts['autoread'] = isEnable  
+bot.autoread2 = isDisable    
+global.opts['autoread'] = isDisable  
 break
 		
 case 'anticall': case 'antillamar': case 'antillamada':
